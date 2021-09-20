@@ -24,3 +24,23 @@ void manga::setMangaka(string _mangaka){
 void manga::setStatus(Status _status){
   status = _status;
 }
+string manga::displayStatus(){
+  Status ch = status;
+  string aux = "";
+  if(ch==Status::Complete){aux = "Complete";}
+  else if(ch==Status::Incomplete){aux = "Incomplete";}
+  else if(ch==Status::Unknown){aux = "Unknown";}
+  return aux;
+}
+
+string manga :: displayInformation(){
+  string info= "---------- "+name+" ------------\n\n";
+  info = info + "Name: " + getName()+"\n";
+  info = info + "ID: " + getID()+"\n";
+  info = info + "Mangaka: " + getMangaka()+"\n";
+  info = info + "Status: " + displayStatus()+"\n";
+  info = info + "Volume: " + to_string(getVolume())+"\n";
+  info = info + "Genre: " + displayGenre()+"\n";
+  info = info + "Raiting: " + to_string(getRaiting())+"\n";
+  return info;
+}

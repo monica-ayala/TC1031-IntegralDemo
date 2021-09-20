@@ -160,7 +160,7 @@ Genre App :: readGenre(ifstream &input){
 
 void App :: displayMedia(){
   for(media *i : vectorMedia){
-    cout<<i -> getName()<<endl;
+    cout<<i->displayInformation()<<endl;
   }
 }
 

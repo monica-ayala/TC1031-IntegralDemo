@@ -17,5 +17,7 @@ class manga : public media{
     void setVolume(int _volume);
     void setMangaka(string _mangaka);
     void setStatus(Status _status);
+    string displayInformation() override;
+    string displayStatus();
 };
 

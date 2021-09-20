@@ -24,6 +24,8 @@ class media{
     void setName(string name);
     void setGenre(Genre genre);
     void setRaiting(float raiting);
+    virtual string displayInformation()=0;
+    string displayGenre();
 };
 
 #endif

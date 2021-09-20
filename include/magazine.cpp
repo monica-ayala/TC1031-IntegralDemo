@@ -10,3 +10,13 @@ int magazine::getEdition(){
 void magazine::setEdition(int _edition){
   edition = _edition;
 }
+
+string magazine :: displayInformation(){
+  string info= "---------- "+name+" ------------\n\n";
+  info = info + "Name: " + getName()+"\n";
+  info = info + "ID: " + getID()+"\n";
+  info = info + "Edition: " + to_string(getEdition())+"\n";
+  info = info + "Genre: " + displayGenre()+"\n";
+  info = info + "Raiting: " + to_string(getRaiting())+"\n";
+  return info;
+}

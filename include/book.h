@@ -11,4 +11,5 @@ class book:public media{
     string getAuthor();
     void setLength(int _length);
     void setAuthor(string _author);
+    string displayInformation() override;
 };
