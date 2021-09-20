@@ -1,0 +1,4 @@
+id National_Geographic C 4 1
+id Sports_Illustrated D 1 15
+id People G 3 45
+id Elledecor M 4 12

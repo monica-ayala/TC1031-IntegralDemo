@@ -1,0 +1,4 @@
+id Dragon_Slayer A 4 2 Koyoharu_Gotoge C
+id Nudist_Beach_ni_Shuugaku_Ryokou_de H 1 1 Shiwazu_no_Okina C
+id Yuri_on_Ice Y 5 3 Sayo_Yamamoto C
+id Nisekoi J 3 13 Naoshi_Komi C
