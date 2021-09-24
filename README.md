@@ -6,4 +6,4 @@ Hasta ahora la única opción completada en el menú es ordenar según el raitin
 
 Análisis de Complejidad:
 
-el sort empleado para ordenar por raiting es un bubble sort 
+el sort empleado para ordenar por raiting es un bubble sort de complejidad O(n^2)
