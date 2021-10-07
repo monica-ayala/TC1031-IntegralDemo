@@ -1,4 +1,4 @@
-id National_Geographic C 4 1
-id Sports_Illustrated D 1 15
-id People G 3 45
-id Elledecor M 4 12
+04 National_Geographic C 4 1
+05 Sports_Illustrated D 1 15
+06 People G 3 45
+07 Elledecor M 4 12

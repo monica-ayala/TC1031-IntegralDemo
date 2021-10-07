@@ -4,6 +4,7 @@
 #include "include/manga.h"
 #include "include/status.h"
 #include "include/magazine.h"
+#include "include/list.h"
 #include <iostream>
 #include <vector>
 #include <bits/stdc++.h>
@@ -13,6 +14,7 @@ using namespace std;
 class App{
   private:
     vector <media*> vectorMedia;
+    List<media*> favoriteMedia;
   public:
     App();
     void start();
@@ -29,5 +31,9 @@ class App{
     void rateMedia();
     void sortByAlphabeticalOrder();
     void sortByAuthor();
+    void favoriteList();
+      void addToFavorites();
+      void deleteFromFavorites();
+      void searchFavorites();
     void swap(int i, int j);
 };

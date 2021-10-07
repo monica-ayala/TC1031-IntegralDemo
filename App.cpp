@@ -18,13 +18,14 @@ void App :: start(){
 }
 bool App :: menu(){
   cout << endl << "------------MENU------------------"<<endl<<endl;
-  cout<<"1. Media by raiting"<<endl;
-  cout<<"2. Media by genre"<<endl;
+  cout<<"1. Sort by best rated"<<endl;
+  cout<<"2. Search a particular genre [not implemented]"<<endl;
   cout<<"3. Display Media"<<endl;
-  cout<<"4. Sort author"<<endl;
-  cout<<"5. Sort name"<<endl;
-  cout<<"6. Rate Media"<<endl;
-  cout<<"7. Exit"<<endl;
+  cout<<"4. Sort author [not implemented]"<<endl;
+  cout<<"5. Sort name [not implemented]"<<endl;
+  cout<<"6. Rate Media [not implemented]"<<endl;
+  cout<<"7. Favorite List [not implemented]"<<endl;
+  cout<<"8. Exit"<<endl;
 
   int op;
   cin >> op;
@@ -48,6 +49,9 @@ bool App :: menu(){
       rateMedia();
       break;
     case 7:
+      favoriteList();
+      break;
+    case 8:
       return true;
       break; 
   }
@@ -189,3 +193,57 @@ void App :: sortByGenre(){}
 void App :: rateMedia(){}
 void App :: sortByAlphabeticalOrder(){}
 void App :: sortByAuthor(){}
+void App :: favoriteList(){
+  cout<<"   a. Add to favorites"<<endl;
+  cout<<"   b. Delete from favorites"<<endl;
+  cout<<"   c. View favorites"<<endl;
+  cout<<"   d. Back to menu"<<endl;
+  char op;
+  cin >> op;
+  switch (op){
+    case 'a':
+      addToFavorites();
+      break;
+    case 'b':
+      deleteFromFavorites();
+      break;
+    case 'c':
+      searchFavorites();
+      break;
+    case 'd':
+      break;
+  }
+}
+
+void App :: addToFavorites(){
+  string str;
+  cout<<"Write the name of the show you want to add"<<endl;
+  cin>>str;
+  media* newFavorite;
+  replace(str.begin(), str.end(), ' ', '_');
+  for (int i = 0; i < vectorMedia.size()-1; i++) {
+    if(vectorMedia[i]->getName()==str){
+      newFavorite = vectorMedia[i];
+    }
+  }
+  favoriteMedia.insertion(newFavorite);
+
+}
+void App :: deleteFromFavorites(){
+  string str;
+  cout<<"Write the name of the show you want to delete"<<endl;
+  cin>>str;
+  media* newFavorite;
+  replace(str.begin(), str.end(), ' ', '_');
+   for (int i = 0; i < vectorMedia.size()-1; i++) {
+    if(vectorMedia[i]->getName()==str){
+      newFavorite = vectorMedia[i];
+    }
+  }
+  int index;
+  index = favoriteMedia.search(newFavorite);
+  favoriteMedia.deleteAt(index);
+}
+void App :: searchFavorites(){
+  cout<<favoriteMedia.toString();
+}
