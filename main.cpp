@@ -92,6 +92,10 @@ Momo
 c
 -------------------------------------------------------------------
 ------------MENU------------------
+clang++-7 -pthread -std=c++17 -o main App.cpp include/book.cpp include/magazine.cpp include/manga.cpp include/media.cpp main.cpp
+ ./main
+
+------------MENU------------------
 
 1. Sort by best rated
 2. Search a particular genre [not implemented]
@@ -99,8 +103,29 @@ c
 4. Sort author [not implemented]
 5. Sort name [not implemented]
 6. Rate Media [not implemented]
-7. Favorite List [not implemented]
-8. Exit
+7. Favorite List
+8. Similar to
+9. Exit
 8
- 
+Write the name of the media you loved
+Momo
+Some similar media to Momo are:
+ 1.-Sports_Illustrated
+ 2.-Nudist_Beach_ni_Shuugaku_Ryokou_de
+ 3.-Sports_Illustrated
+ 4.-Nudist_Beach_ni_Shuugaku_Ryokou_de
+ 5.-People
+
+------------MENU------------------
+
+1. Sort by best rated
+2. Search a particular genre [not implemented]
+3. Display Media
+4. Sort author [not implemented]
+5. Sort name [not implemented]
+6. Rate Media [not implemented]
+7. Favorite List
+8. Similar to
+9. Exit
+
 **/
