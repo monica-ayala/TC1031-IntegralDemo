@@ -20,7 +20,33 @@ Genre media::getGenre(){
 float media::getRaiting(){
   return raiting;
 }
+float media::getSim(){
+  return sim;
+}
+
+
+float media :: operator%(const media& val){
+  float similarity=0;
+  if(genre==val.genre){
+    similarity = similarity + 50;
+  }
+  else if(genre!=val.genre){
+    similarity = similarity + 10;
+  }
+  if(raiting==val.raiting){
+    similarity = similarity + 49;
+  }
+  else if(raiting!=val.raiting){
+    float d = raiting - val.raiting;
+    similarity = similarity + 50 - d*10;
+  }
+  return similarity/100;
+}
+
 void media::setID(string ID){
+}
+void media::setSim(float similarity){
+  sim = similarity;
 }
 void media::setName(string name){}
 void media::setGenre(Genre genre){}

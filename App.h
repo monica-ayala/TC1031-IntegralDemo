@@ -9,6 +9,8 @@
 #include <vector>
 #include <bits/stdc++.h>
 #include <fstream>
+#include <queue>
+
 using namespace std;
 
 class App{
@@ -35,5 +37,6 @@ class App{
       void addToFavorites();
       void deleteFromFavorites();
       void searchFavorites();
+    void similarTo();
     void swap(int i, int j);
 };

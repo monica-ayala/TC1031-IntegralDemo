@@ -12,6 +12,7 @@ class media{
     string name;
     Genre genre;
     float raiting;
+    float sim;
   public:
     media();
     media(string _ID, string _name, Genre _genre, float _raiting);
@@ -19,11 +20,14 @@ class media{
     string getName();
     Genre getGenre();
     float getRaiting();
+    float getSim();
+    float operator%(const media& val);
     int getLength();
     void setID(string ID);
     void setName(string name);
     void setGenre(Genre genre);
     void setRaiting(float raiting);
+    void setSim(float similarity);
     virtual string displayInformation()=0;
     string displayGenre();
 };

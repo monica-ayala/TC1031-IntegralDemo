@@ -24,8 +24,9 @@ bool App :: menu(){
   cout<<"4. Sort author [not implemented]"<<endl;
   cout<<"5. Sort name [not implemented]"<<endl;
   cout<<"6. Rate Media [not implemented]"<<endl;
-  cout<<"7. Favorite List [not implemented]"<<endl;
-  cout<<"8. Exit"<<endl;
+  cout<<"7. Favorite List"<<endl;
+  cout<<"8. Similar to"<<endl;
+  cout<<"9. Exit"<<endl;
 
   int op;
   cin >> op;
@@ -52,6 +53,9 @@ bool App :: menu(){
       favoriteList();
       break;
     case 8:
+      similarTo();
+      break;
+    case 9:
       return true;
       break; 
   }
@@ -217,7 +221,7 @@ void App :: favoriteList(){
 
 void App :: addToFavorites(){
   string str;
-  cout<<"Write the name of the show you want to add"<<endl;
+  cout<<"Write the name of the media you want to add"<<endl;
   cin>>str;
   media* newFavorite;
   replace(str.begin(), str.end(), ' ', '_');
@@ -231,7 +235,7 @@ void App :: addToFavorites(){
 }
 void App :: deleteFromFavorites(){
   string str;
-  cout<<"Write the name of the show you want to delete"<<endl;
+  cout<<"Write the name of the media you want to delete"<<endl;
   cin>>str;
   media* newFavorite;
   replace(str.begin(), str.end(), ' ', '_');
@@ -246,4 +250,44 @@ void App :: deleteFromFavorites(){
 }
 void App :: searchFavorites(){
   cout<<favoriteMedia.toString();
+}
+
+//CORRECTION NEEDED TO STOP REC´S FROM REPEATING
+// Possible solution: organize the heap with object type <*media> and not only with <float>
+
+
+void App :: similarTo(){
+  priority_queue<float> queueSim;
+  float sim;
+  string str;
+  media* compareMedia;
+  cout<<"Write the name of the media you loved"<<endl;
+  cin>>str;
+
+  for (int i = 0; i < vectorMedia.size()-1; i++) {
+    if(vectorMedia[i]->getName()==str){
+      compareMedia = vectorMedia[i];
+    }
+  }
+
+  for (int i = 0; i < vectorMedia.size()-1; i++) {
+    sim=(float)(*vectorMedia[i]%*compareMedia);
+    queueSim.push(sim);
+    vectorMedia[i]->setSim(sim);
+  }
+  
+  queueSim.pop();
+  int j=1;
+  cout<<"Some similar media to "<<str<<" are:"<<endl;
+  for (int k = 0; k < 3; k++) {
+    for (int i = 0; i < vectorMedia.size()-1; i++) {
+      if(vectorMedia[i]->getSim()==queueSim.top()){
+        cout<<" "<<j<<".-"<<vectorMedia[i]->getName()<<endl;;
+        j++;
+      }
+    } 
+    queueSim.pop();
+  }
+  
+
 }
