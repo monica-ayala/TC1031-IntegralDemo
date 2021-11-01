@@ -14,119 +14,93 @@ int main() {
 ------------MENU------------------
 
 1. Sort by best rated
-2. Search a particular genre
+2. Search a particular genre [not implemented]
 3. Display Media
-4. Sort author
-5. Sort name
-6. Rate Media
-7. Exit
-1
+4. Sort author [not implemented]
+5. Sort name [not implemented]
+6. Rate Media [not implemented]
+7. Favorite List [not implemented]
+8. Exit
+7
+   a. Add to favorites
+   b. Delete from favorites
+   c. View favorites
+   d. Back to menu
+a
+Write the name of the show you want to add
+Momo
 
 ------------MENU------------------
 
 1. Sort by best rated
-2. Search a particular genre
+2. Search a particular genre [not implemented]
 3. Display Media
-4. Sort author
-5. Sort name
-6. Rate Media
-7. Exit
-3
----------- Nudist_Beach_ni_Shuugaku_Ryokou_de ------------
-
-Name: Nudist_Beach_ni_Shuugaku_Ryokou_de
-ID: id
-Mangaka: Shiwazu_no_Okina
-Status: Complete
-Volume: 1
-Genre: Hentai
-Raiting: 1.000000
-
----------- Sports_Illustrated ------------
-
-Name: Sports_Illustrated
-ID: id
-Edition: 15
-Genre: Sports
-Raiting: 1.000000
-
----------- Nisekoi ------------
-
-Name: Nisekoi
-ID: id
-Mangaka: Naoshi_Komi
-Status: Complete
-Volume: 13
-Genre: Shoujo
-Raiting: 3.000000
-
----------- People ------------
-
-Name: People
-ID: id
-Edition: 45
-Genre: Gossip
-Raiting: 3.000000
-
----------- Momo ------------
+4. Sort author [not implemented]
+5. Sort name [not implemented]
+6. Rate Media [not implemented]
+7. Favorite List [not implemented]
+8. Exit
+7
+   a. Add to favorites
+   b. Delete from favorites
+   c. View favorites
+   d. Back to menu
+c
+-------------------------------------------- Momo ------------
 
 Name: Momo
-ID: id
+ID: 02
 Author: Michele_Ende
 Genre: Fantasy
 Length: 120
 Raiting: 3.000000
+---------------------------------
+------------MENU------------------
 
----------- National_Geographic ------------
+1. Sort by best rated
+2. Search a particular genre [not implemented]
+3. Display Media
+4. Sort author [not implemented]
+5. Sort name [not implemented]
+6. Rate Media [not implemented]
+7. Favorite List [not implemented]
+8. Exit
+7
+   a. Add to favorites
+   b. Delete from favorites
+   c. View favorites
+   d. Back to menu
+b
+Write the name of the show you want to delete
+Momo
 
-Name: National_Geographic
-ID: id
-Edition: 1
-Genre: Scientific
-Raiting: 4.000000
+------------MENU------------------
 
----------- Elledecor ------------
+1. Sort by best rated
+2. Search a particular genre [not implemented]
+3. Display Media
+4. Sort author [not implemented]
+5. Sort name [not implemented]
+6. Rate Media [not implemented]
+7. Favorite List [not implemented]
+8. Exit
+7
+   a. Add to favorites
+   b. Delete from favorites
+   c. View favorites
+   d. Back to menu
+c
+-------------------------------------------------------------------
+------------MENU------------------
 
-Name: Elledecor
-ID: id
-Edition: 12
-Genre: Home
-Raiting: 4.000000
-
----------- Dragon_Slayer ------------
-
-Name: Dragon_Slayer
-ID: id
-Mangaka: Koyoharu_Gotoge
-Status: Complete
-Volume: 2
-Genre: Shonen
-Raiting: 4.000000
-
----------- What_To_Say_Next ------------
-
-Name: What_To_Say_Next
-ID: id
-Author: Julie_Buxbaum
-Genre: Romance
-Length: 289
-Raiting: 5.000000
-
----------- Yuri_on_Ice ------------
-
-Name: Yuri_on_Ice
-ID: id
-Mangaka: Sayo_Yamamoto
-Status: Complete
-Volume: 3
-Genre: Yaoi
-Raiting: 5.000000
-
----------- Carrie ------------
-
-Name: Carrie
-ID: id
-Author: Stephen_King
-Genre: Hentai
-Length: 167
-Raiting: 5.000000 **/
+1. Sort by best rated
+2. Search a particular genre [not implemented]
+3. Display Media
+4. Sort author [not implemented]
+5. Sort name [not implemented]
+6. Rate Media [not implemented]
+7. Favorite List [not implemented]
+8. Exit
+8
+ 
+**/
