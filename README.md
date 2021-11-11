@@ -6,7 +6,9 @@ Hasta ahora las únicas opciones completadas en el menú es ordenar según el ra
 crear una lista de favoritos (implementando una estrcutura lineal de datos) y hacer recomendaciones según un título dado.
 
 Ordenar por raiting : Bubble Sort
+
 Lista de favoritos: Linked List
+
 Recomendaciones de un título: Priority Queue con Heap Max
 
 
