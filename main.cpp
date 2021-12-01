@@ -19,7 +19,6 @@ int main() {
 4. Sort author [not implemented]
 5. Sort name [not implemented]
 6. Rate Media [not implemented]
-7. Favorite List [not implemented]
 8. Exit
 7
    a. Add to favorites
