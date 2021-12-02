@@ -32,3 +32,9 @@ Para la opción de buscar recomendaciones de libros similar a un título en part
 ### Lectura de archivos 
 
 Para la lectura de archivos se hicieron tres archivos que contienen los datos de las revistas, de los libros y de los mangas. Luego con los métodos LoadManga(), LoadBooks() y LoadMagazines() estos se leen y cargan al vector de punteros tipo media. 
+
+## Análisis de complejidad
+ - Bubble sort: la complejidad es de O(n^2) ya que se trata de dos fors
+ - Linked list: la complejidad para recorrer la lista es de O(n)
+ - Heap Max: para el pop y push que es loque haremos para manipular el heap max la complejidad es de O(log n).
+  
