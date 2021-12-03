@@ -9,7 +9,7 @@ La integral implementa los siguientes puntos:
 
 ## Descripción del programa
 
-El programa simula una librería en donde hay mangas, libros y revistas que tienen distintos atributos. El usuario puede interactuar con el sistema por medio de un menú con las opciones de ordenar los libros por mejor calificado,agregar un libro a tu lista de favoritos y buscar recomendaciones de libros similares a uno en particular.  
+El programa simula una librería en donde hay mangas, libros y revistas que tienen distintos atributos. El usuario puede interactuar con el sistema por medio de un menú con las opciones de ordenar los libros por peor calificado,agregar un libro a tu lista de favoritos y buscar recomendaciones de libros similares a uno en particular.  
 
 ## Correcciones de la Integral A:
  - Se agregaron los casos de prueba
@@ -17,9 +17,9 @@ El programa simula una librería en donde hay mangas, libros y revistas que tien
  - Se eliminaron las opciones no implementadas del menú
 ## Implementación de estructuras de datos
 
-### Ordenamiento (Bubble sort) - Sort by best rated:
+### Ordenamiento (Bubble sort) - Sort by worst rated:
 
-Para la opción de ordenar los libros según los mejor calificados se implementó un algoritmo de ordenamiento llamado Bubble Sort, un algoritmo sencillo que revisa cada uno de los elementos en el vector "vectorMedia" y realiza un intercambio (swap) según cual tiene una mayor calificación. 
+Para la opción de ordenar los libros según los peor calificados se implementó un algoritmo de ordenamiento llamado Bubble Sort, un algoritmo sencillo que revisa cada uno de los elementos en el vector "vectorMedia" y realiza un intercambio (swap) según cual tiene una mayor calificación. 
 
 ### Estructuras lineales (Linked List) - Favorite List
 

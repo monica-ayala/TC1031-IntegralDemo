@@ -18,44 +18,29 @@ void App :: start(){
 }
 bool App :: menu(){
   cout << endl << "------------MENU------------------"<<endl<<endl;
-  cout<<"1. Sort by best rated"<<endl;
-  cout<<"2. Search a particular genre [not implemented]"<<endl;
-  cout<<"3. Display Media"<<endl;
-  cout<<"4. Sort author [not implemented]"<<endl;
-  cout<<"5. Sort name [not implemented]"<<endl;
-  cout<<"6. Rate Media [not implemented]"<<endl;
-  cout<<"7. Favorite List"<<endl;
-  cout<<"8. Similar to"<<endl;
-  cout<<"9. Exit"<<endl;
+  cout<<"1. Sort by worst rated"<<endl;
+  cout<<"2. Display Media"<<endl;
+  cout<<"3. Favorite List"<<endl;
+  cout<<"4. Similar to"<<endl;
+  cout<<"5. Exit"<<endl;
 
   int op;
   cin >> op;
   switch (op){
     case 1:
       sortByRaiting();
-      break;
-    case 2:
-      sortByGenre();
-      break;
-    case 3:
       displayMedia();
       break;
-    case 4:
-      sortByAuthor();
+    case 2:
+      displayMedia();
       break;
-    case 5:
-      sortByAlphabeticalOrder();
-      break;
-    case 6:
-      rateMedia();
-      break;
-    case 7:
+    case 3:
       favoriteList();
       break;
-    case 8:
+    case 4:
       similarTo();
       break;
-    case 9:
+    case 5:
       return true;
       break; 
   }
